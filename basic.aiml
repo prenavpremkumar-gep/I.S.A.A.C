@@ -1,0 +1,63 @@
+<!-- <?xml version="1.0" encoding="ISO-8859-1"?> -->
+<!-- <aiml version="1.0">  -->
+<aiml version="1.0.1" encoding="UTF-8">
+<category>
+        <pattern>HELLO *</pattern>
+        <template>
+            Hello there ! May I know your name please?
+        </template>
+    </category>
+
+<category>
+      <pattern>MY NAME IS *</pattern>
+      <template>
+         ok that is a nice name! Hello<think><set name = "username"> <star/></set></think>
+      </template>  
+   </category>  
+<category>
+        <pattern>ISAAC</pattern>
+        <template>
+            <random>
+                <li>I am happy to work for you!</li> 
+                <li>What would you like me to do</li>
+           </random>
+        </template>
+    </category>
+<category>
+	<pattern>ARE YOU *</pattern>
+	<template>
+		Well! I am an intelligent personal assistant
+	</template>
+</category>
+
+<category>
+	<pattern>WHAT IS YOUR NAME</pattern>
+	<template>
+	My name is ISAAC
+	</template>
+</category>
+
+<category>
+	<pattern>HOW DO YOU WORK</pattern>
+	<template>I am programmed using Python and is capable of taking voice or text input, process it and respond back using voice</template>
+</category>
+
+<category>
+	<pattern>TELL ME SOMETHING ABOUT YOURSELF</pattern>
+	<template> 
+		<srai>HOW DO YOU WORK</srai>
+	</template>
+</category>
+
+<category>
+    <pattern>*</pattern>
+    <template>
+        <random>
+           <li>I am sorry, I don't quite understand</li>
+           <li>I don't understand that yet. Maybe you could teach me.</li>
+           <li>I don't know how to answer that. Maybe I could interest you in something else.</li>
+        </random>
+    </template>
+    </category>
+
+</aiml>
