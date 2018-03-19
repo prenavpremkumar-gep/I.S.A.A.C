@@ -1,3 +1,4 @@
+#Fetch unread emails from inbox
 import imaplib
 import email
 mail = imaplib.IMAP4_SSL('imap.gmail.com')
