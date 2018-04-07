@@ -105,8 +105,8 @@ def get_recipients(msg_parsed):
 
 def send_initiate():
     target.clear()
-    username = 'naik.sushma12345@gmail.com'  # input("Full email address: ")
-    password = 'sreegayatri'  # input('Password: ')
+    username = ''  # input("Full email address: ")
+    password = ''  # input('Password: ')
     # Connect
     mail_conn = connect(username, password)
 
