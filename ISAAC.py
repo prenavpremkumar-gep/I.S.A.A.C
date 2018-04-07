@@ -13,6 +13,10 @@ from power import *
 from Windows_search import winsearch
 from Speech import speak
 from Speech import chat_speak
+from sending_email import send_initiate
+from reading_email import reading
+from keyword_file_search import keyword_search
+
 def isaac(string):
     '''
 Defines the whole working scheme of ISAAC
@@ -95,7 +99,8 @@ Defines the whole working scheme of ISAAC
             unfiltered = unfiltered[pos:]
         case = 2
         speak(case)
-        winsearch(unfiltered)
+        keyword_search()
+        #winsearch(unfiltered)
 
     #Playing Music in native app
 
@@ -125,9 +130,14 @@ Defines the whole working scheme of ISAAC
                 logout()
     if "abort" in string:
         abort_shutdown()
-    #Alarm
-    #Setting a reminder
+    #Send Mail
+     if 'send' in filtered_sentence :
+        send_initiate()
     #Checking Mail
+     if 'read' in filtered_sentence and 'mail' in filtered_sentence:
+        reading()
+     #Alarm
+    #Setting a reminder
     #System Update
 
     return ""
