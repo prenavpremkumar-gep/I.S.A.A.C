@@ -16,8 +16,8 @@ count = 0
 DEFAULT_MAIL_SERVER = 'imap.gmail.com'
 ADDR_PATTERN = re.compile('<(.*?)>')
 target =[]
-username = 'naik.sushma12345@gmail.com'  # input("Full email address: ")
-password = 'sreegayatri'  # input('Password: ')
+username = ''  # input("Full email address: ")
+password = ''  # input('Password: ')
 
 def sending(target_mail):
         print(target_mail)
